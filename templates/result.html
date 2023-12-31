@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Thala For A Reason</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="result">
+      {% if is_thala_fan %}
+        <img src="static/msdhoni.jpeg" alt="MS Dhoni" id="dhoniImage">
+        <p>You're a Thala fan!</p>
+      {% else %}
+        <p>Boo, you're not a Thala fan!</p>
+      {% endif %}
+    </div>
+  </div>
+
+</body>
+</html>

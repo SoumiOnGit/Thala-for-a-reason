@@ -2,22 +2,23 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background: url("/static/thala.jpg") center fixed;
+  background-size: cover;
+  filter: blur(5px);
 }
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .prompt {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
@@ -38,14 +39,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-.result {
-  display: none;
-}
-
-#dhoniImage {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
 }

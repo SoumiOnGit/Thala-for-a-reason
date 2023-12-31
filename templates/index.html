@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>Thala Fan Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="prompt">
+      <form action="/check_input" method="post">
+        <p>Are you a Thala fan? Enter a word or number:</p>
+        <input type="text" name="userInput" placeholder="Type here..." required>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
